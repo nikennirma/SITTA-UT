@@ -1,0 +1,155 @@
+/* ==============================
+   DASHBOARD
+============================== */
+
+/* GREETING */
+
+.greeting-card {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 25px 30px;
+
+    margin-bottom: 30px;
+
+    border: 1px solid #e5ebe8;
+}
+
+.greeting-time {
+    margin: 0 0 5px;
+
+    color: #0c1758;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.greeting-card h1 {
+    margin: 0 0 8px;
+
+    font-size: 24px;
+
+    color: #26332f;
+}
+
+.greeting-card p:last-child {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* SECTION */
+
+.section-header {
+    margin-bottom: 15px;
+}
+
+.section-header h2 {
+    margin: 0 0 4px;
+
+    font-size: 18px;
+
+    color: #26332f;
+}
+
+.section-header p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+/* DASHBOARD CARD */
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.dashboard-card {
+    background: white;
+
+    border: 1px solid #e5ebe8;
+
+    border-radius: 12px;
+
+    padding: 22px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    text-decoration: none;
+
+    position: relative;
+
+    transition: 0.2s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+
+    border-color: #0c1758;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: #E0FFE9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 23px;
+}
+
+.card-content {
+    padding-right: 25px;
+}
+
+.card-content h3 {
+    margin: 0 0 5px;
+
+    color: #26332f;
+
+    font-size: 15px;
+}
+
+.card-content p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+.card-arrow {
+    position: absolute;
+
+    right: 20px;
+
+    color: #0c1758;
+
+    font-size: 20px;
+}

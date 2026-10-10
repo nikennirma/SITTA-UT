@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Pemesanan Bahan Ajar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                <div class="logo-placeholder">
+                    UT
+                </div>
+
+                <div>
+                    <h2>Universitas Terbuka</h2>
+                    <span>Sistem Bahan Ajar</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+            <a href="dashboard.html" class="menu-item">
+                <i class="fa-solid fa-home"></i>
+                Dashboard
+            </a>
+            <a href="stok.html" class="menu-item">
+                <i class="fa-solid fa-book"></i>
+                Informasi Bahan Ajar
+            </a>
+
+            <a href="tracking.html" class="menu-item">
+                <i class="fa-solid fa-truck"></i>
+                Tracking Pengiriman
+            </a>
+
+            <div class="menu-group-title">
+                LAPORAN
+            </div>
+
+            <a href="#" class="menu-item submenu">
+                <i class="fa-solid fa-chart-line"></i>
+                Monitoring Progress DO
+            </a>
+
+            <a href="#" class="menu-item submenu">
+                <i class="fa-solid fa-clipboard-list"></i>
+                Rekap Bahan Ajar
+            </a>
+
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                Histori Transaksi
+            </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <button id="logoutButton" class="logout-button">
+                    <span>↪</span>
+                    Logout
+                </button>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- TOPBAR -->
+            <header class="topbar">
+
+                <div>
+                    <h3>Dashboard</h3>
+                </div>
+
+                <div class="user-info">
+                    <div class="user-avatar" id="userAvatar">
+                        U
+                    </div>
+
+                    <div class="user-detail">
+                        <strong id="userName">User</strong>
+                        <span id="userRole">User</span>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- CONTENT -->
+            <section class="content">
+
+                <!-- GREETING -->
+                <div class="greeting-card">
+
+                    <div>
+                        <p class="greeting-time" id="greetingTime">
+                            Selamat pagi
+                        </p>
+
+                        <h1 id="greetingName">
+                            Selamat datang!
+                        </h1>
+
+                        <p>
+                            Selamat datang di Sistem Pemesanan Bahan Ajar
+                            Universitas Terbuka.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- MENU UTAMA -->
+                <div class="section-header">
+                    <div>
+                        <h2>Menu Utama</h2>
+                        <p>Akses fitur pengelolaan bahan ajar</p>
+                    </div>
+                </div>
+
+
+                <div class="dashboard-grid">
+
+                    <!-- Informasi Bahan Ajar -->
+                    <a href="stok.html" class="dashboard-card">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+
+                        <div class="card-content">
+                            <h3>Informasi Bahan Ajar</h3>
+
+                            <p>
+                                Melihat informasi dan ketersediaan
+                                bahan ajar.
+                            </p>
+                        </div>
+
+                        <span class="card-arrow">→</span>
+
+                    </a>
+
+
+                    <!-- Tracking -->
+                    <a href="tracking.html" class="dashboard-card">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+
+                        <div class="card-content">
+                            <h3>Tracking Pengiriman</h3>
+
+                            <p>
+                                Memantau status dan perjalanan
+                                pengiriman bahan ajar.
+                            </p>
+                        </div>
+
+                        <span class="card-arrow">→</span>
+
+                    </a>
+
+
+                    <!-- Monitoring Progress DO -->
+                    <a href="#" class="dashboard-card">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <div class="card-content">
+                            <h3>Monitoring Progress DO</h3>
+
+                            <p>
+                                Monitoring progress Delivery Order
+                                bahan ajar.
+                            </p>
+                        </div>
+
+                        <span class="card-arrow">→</span>
+
+                    </a>
+
+
+                    <!-- Rekap -->
+                    <a href="#" class="dashboard-card">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-file-invoice"></i>
+                        </div>
+
+                        <div class="card-content">
+                            <h3>Rekap Bahan Ajar</h3>
+
+                            <p>
+                                Melihat rekapitulasi pemesanan
+                                bahan ajar.
+                            </p>
+                        </div>
+
+                        <span class="card-arrow">→</span>
+
+                    </a>
+
+
+                    <!-- Histori -->
+                    <a href="#" class="dashboard-card">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                        <div class="card-content">
+                            <h3>Histori Transaksi</h3>
+
+                            <p>
+                                Melihat histori transaksi
+                                bahan ajar.
+                            </p>
+                        </div>
+
+                        <span class="card-arrow">→</span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

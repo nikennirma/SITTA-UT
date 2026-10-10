@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Pemesanan Bahan Ajar - Universitas Terbuka</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <div class="logo">
+                <img src="assets/svg/logo-ut.svg" alt="Logo Universitas Terbuka">
+                <h1>Universitas Terbuka</h1>
+                
+                <p>
+                    Sistem Pemesanan Bahan Ajar
+                </p>
+
+            </div>
+
+            <form id="loginForm">
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        placeholder="Masukkan Email"
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+                <div class="password-wrapper">
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Masukkan password"
+                    >
+                    <i
+                    class="fa-solid fa-eye-slash toggle-password"
+                    id="togglePassword"
+                    ></i>
+
+                </div>
+                <div class="form-group">
+                    <a href="#" id="forgotPassword" class="forgot-password">
+                        Lupa Password?
+                    </a> 
+                </div>
+
+                <div id="errorMessage" class="error-message" ></div>
+
+                <button
+                    type="submit"
+                    class="login-button"
+                >
+                    Login
+                </button>
+
+                <div class="register-link">
+                    Belum punya akun? <a href="#" id="showRegister">Daftar</a></div>
+
+
+            </form>
+
+            <div class="footer">
+
+                Universitas Terbuka © 2026
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="forgotPasswordModal" class="modal-overlay">
+
+        <div class="forgot-password-modal">
+
+            <div class="forgot-password-icon">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <h3>Lupa Password?</h3>
+
+            <p>
+                Untuk melakukan reset password,
+                silakan hubungi Administrator.
+            </p>
+
+            <button
+                type="button"
+                id="closeForgotPassword"
+                class="modal-button"
+            >
+                Mengerti
+            </button>
+
+        </div>
+    </div>
+
+    <div id="showRegisterModal" class="modal-overlay">
+
+        <div class="register-modal">
+
+            <div class="register-icon">
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+
+            <h3>Daftar Akun</h3>
+
+            <p>
+                Untuk melakukan pendaftaran akun,
+                silakan hubungi Administrator.
+            </p>
+
+            <button
+                type="button"
+                id="closeRegisterModal"
+                class="modal-button"
+            >
+                Mengerti
+            </button>
+
+        </div>
+    <!-- Data aplikasi --> <script src="js/data.js"></script> 
+     <!-- Logic login --> <script src="js/login.js"></script>
+
+</body>
+</html>
+
